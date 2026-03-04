@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeremy Chung | Engineering Portfolio</title>
+    <meta
+      name="description"
+      content="Jeremy Chung's Website Portfolio"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#intro">Jeremy Chung</a>
+      <nav>
+        <a href="#intro">Intro</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero reveal" id="intro">
+        <div class="hero-copy">
+          <p class="eyebrow">My Portfolio</p>
+          <h1>Hi, I'm Jeremy!</h1>
+          <p class="lead">
+            I'm an Electrical and Computer Engineering student at the University of Pennsylvania
+            (Class of 2028) focused on robotics, embedded systems, hardware design, and Edge AI.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#projects">View My Projects</a>
+            <a class="btn btn-secondary" href="#contact">Let's Connect</a>
+          </div>
+        </div>
+        <div class="hero-photo-wrap" aria-label="Profile photo placeholder">
+          <img
+            class="hero-photo"
+            src="assets/profile-photo.jpg"
+            alt="Jeremy portrait"
+          />
+          <p class="hero-photo-note">
+            Penn Aerial Robotics testing session.
+          </p>
+        </div>
+      </section>
+
+      <section class="about reveal" id="about">
+        <h2>Introduction</h2>
+        <p>
+          I am currently pursuing a BSE in Electrical Engineering with a
+          robotics concentration at UPenn. My work centers on embedded systems,
+          autonomous robotics, and practical hardware-software integration.
+        </p>
+        <p>
+          I have contributed to Penn Aerial Robotics, Science Olympiad at
+          UPenn, and robotics research/internships in both the US and Germany.
+        </p>
+      </section>
+
+      <section class="quick-glance reveal">
+        <h2>Quick Glance</h2>
+        <div class="grid-3">
+          <article class="panel">
+            <h3>Current Focus</h3>
+            <p>Power and thrust systems, robotics control, and embedded design.</p>
+          </article>
+          <article class="panel">
+            <h3>Interests</h3>
+            <p>Robotics, embedded systems, computer vision, and PCB design.</p>
+          </article>
+          <article class="panel">
+            <h3>Seeking</h3>
+            <p>Internship and research opportunities in robotics and autonomy.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="reveal" id="projects">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Projects</h2>
+        <p class="lead">
+          Selected technical work and leadership experiences in robotics,
+          embedded systems, and engineering operations.
+        </p>
+      </section>
+
+      <section class="projects-grid reveal">
+        <article class="project-card" data-project="campus-event-finder" tabindex="0" role="button" aria-label="Open Penn Aerial Robotics details">
+          <h2>Penn Aerial Robotics</h2>
+          <p>
+            Lead design and integration of batteries, motors, and power
+            management for SAE Aero Design Micro, Regular, and Advanced class
+            planes.
+          </p>
+          <div class="bubbles">
+            <span>Power Systems</span>
+            <span>Motors</span>
+            <span>Battery Integration</span>
+            <span>Testing</span>
+            <span>Aircraft Design</span>
+          </div>
+          <p class="project-action">Click to view details and images</p>
+        </article>
+
+        <article class="project-card" data-project="grade-analytics-dashboard" tabindex="0" role="button" aria-label="Open Science Olympiad at UPenn details">
+          <h2>Science Olympiad at UPenn</h2>
+          <p>
+            As Builds Director, I facilitate build events supporting 1,000+
+            students and 72 high school teams at a major invitational.
+          </p>
+          <div class="bubbles">
+            <span>Leadership</span>
+            <span>Operations</span>
+            <span>Event Design</span>
+            <span>STEM Outreach</span>
+            <span>Team Coordination</span>
+          </div>
+          <p class="project-action">Click to view details and images</p>
+        </article>
+
+        <article class="project-card" data-project="smart-greenhouse-monitor" tabindex="0" role="button" aria-label="Open RWTH Aachen Robotics Research details">
+          <h2>RWTH Aachen Robotics Research</h2>
+          <p>
+            Built an 8-actuator "octopus controller" for automated carbon fiber
+            layup and presented work at the UROP International Research
+            Symposium.
+          </p>
+          <div class="bubbles">
+            <span>Robotics</span>
+            <span>Actuator Control</span>
+            <span>Research</span>
+            <span>Automation</span>
+            <span>Prototyping</span>
+          </div>
+          <p class="project-action">Click to view details and images</p>
+        </article>
+
+        <article class="project-card" data-project="portfolio-site" tabindex="0" role="button" aria-label="Open Johns Hopkins APL ASPIRE Robotics details">
+          <h2>Johns Hopkins APL ASPIRE Robotics</h2>
+          <p>
+            Designed autonomous robotics systems using SolidWorks, ROS, Unity,
+            and computer vision models with presentations at IEEE ISEC and
+            research showcases.
+          </p>
+          <div class="bubbles">
+            <span>SolidWorks</span>
+            <span>ROS</span>
+            <span>Unity</span>
+            <span>Roboflow</span>
+            <span>Computer Vision</span>
+          </div>
+          <p class="project-action">Click to view details and images</p>
+        </article>
+      </section>
+
+      <section class="form-wrap reveal" id="contact">
+        <p class="eyebrow">Get In Touch</p>
+        <h2>Contact</h2>
+        <p class="lead">
+          Reach me directly at
+          <a class="inline-link" href="mailto:jjychung168@gmail.com">jjychung168@gmail.com</a>
+          or connect on
+          <a
+            class="inline-link"
+            href="https://www.linkedin.com/in/jeremy-c-upenn28"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >.
+        </p>
+        <p class="note">
+          Open to robotics, embedded systems, and engineering collaboration
+          opportunities.
+        </p>
+
+        <form action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <input type="hidden" name="_subject" value="New portfolio message" />
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <section
+        class="project-modal"
+        id="project-modal"
+        aria-hidden="true"
+        aria-labelledby="project-modal-title"
+        role="dialog"
+      >
+        <div class="project-modal-panel">
+          <button class="modal-close" id="modal-close" type="button" aria-label="Close details">
+            Close
+          </button>
+          <p class="eyebrow">Project Details</p>
+          <h2 id="project-modal-title"></h2>
+          <p id="project-modal-summary"></p>
+          <div id="project-modal-links" class="project-links"></div>
+          <h3>Highlights</h3>
+          <ul id="project-modal-points"></ul>
+          <h3>Images</h3>
+          <div id="project-modal-images" class="project-modal-images"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Jeremy Chung</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
