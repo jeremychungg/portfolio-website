@@ -12,102 +12,102 @@ if (heroPhoto) {
 
 const projectData = {
   "campus-event-finder": {
-    title: "Penn Aerial Robotics",
+    title: "ServeSense",
     summary:
-      "Power and Thrust Management Electrical Lead with prior service as an Electrical Subteam Member.",
+      "I built an embedded ML device that acts like a real-time tennis serve coach.",
     points: [
-      "Lead design and integration of batteries, motors, and power management systems.",
-      "Support testing and competition readiness for SAE Aero Design Micro, Regular, and Advanced class planes.",
-      "Coordinate electrical implementation across team subsystems and testing cycles."
+      "Used ESP32-S3 + TensorFlow to classify serves in real time with 98.25% accuracy.",
+      "Integrated a 6-axis IMU, BLE communication, and haptic feedback in one device.",
+      "Designed it to give immediate guidance right after each serve."
     ],
     links: [
-      { label: "LinkedIn", url: "https://www.linkedin.com/in/jeremy-c-upenn28" }
+      { label: "GitHub", url: "https://github.com/your-username/servesense" }
     ],
     images: [
       {
-        src: "assets/projects/penn-aerial-robotics-1.jpg",
-        alt: "Penn Aerial Robotics aircraft and electronics",
-        caption: "Power system integration setup"
+        src: "assets/projects/servesense-1.jpg",
+        alt: "ServeSense prototype hardware",
+        caption: "ServeSense hardware prototype"
       },
       {
-        src: "assets/projects/penn-aerial-robotics-2.jpg",
-        alt: "Penn Aerial Robotics testing session",
-        caption: "Testing and validation workflow"
+        src: "assets/projects/servesense-2.jpg",
+        alt: "ServeSense testing workflow",
+        caption: "Real-time serve classification testing"
       }
     ]
   },
   "grade-analytics-dashboard": {
-    title: "Science Olympiad at UPenn",
+    title: "Imitation Learning Robot System",
     summary:
-      "Builds Director and former Air Trajectory Event Supervisor for one of the largest college-run invitationals in the US.",
+      "LeRobot Worldwide Hackathon project focused on imitation learning for robotic block picking.",
     points: [
-      "Facilitate build events for 1,000+ students and 72 high school teams.",
-      "Coordinate event structure, logistics, and judging standards.",
-      "Support hands-on STEM competition experiences at scale."
+      "Trained open-source SmolVLM using PyTorch and NVIDIA CUDA Toolkit.",
+      "Built a leader-follower setup where the follower learned to detect and grasp colored blocks.",
+      "Shipped a working autonomous grasping demo during hackathon constraints."
     ],
     links: [
-      { label: "LinkedIn", url: "https://www.linkedin.com/in/jeremy-c-upenn28" }
+      { label: "Project Overview", url: "https://github.com/your-username/imitation-learning-robot-system" }
     ],
     images: [
       {
-        src: "assets/projects/science-olympiad-1.jpg",
-        alt: "Science Olympiad build event",
-        caption: "Build event coordination"
+        src: "assets/projects/imitation-robot-1.jpg",
+        alt: "Leader follower robot setup",
+        caption: "Leader-follower robot system"
       },
       {
-        src: "assets/projects/science-olympiad-2.jpg",
-        alt: "Science Olympiad student teams",
-        caption: "Invitational event operations"
+        src: "assets/projects/imitation-robot-2.jpg",
+        alt: "Robot grasping colored blocks",
+        caption: "Autonomous block detection and grasping"
       }
     ]
   },
   "smart-greenhouse-monitor": {
-    title: "RWTH Aachen Robotics Research",
+    title: "Haptic Bicycle Navigation System",
     summary:
-      "Robotics Research Intern at ITA Institut fur Textiltechnik der RWTH Aachen University.",
+      "An ESP32 bike navigation build that replaces constant phone-checking with haptic cues.",
     points: [
-      "Engineered an 8-actuator 'octopus controller' for automated carbon fiber layup.",
-      "Built and integrated the control system for repeatable actuation workflows.",
-      "Presented outcomes at the UROP International Research Symposium."
+      "Integrated Google Maps API routing with an LED matrix and vibrating handlebars.",
+      "Delivered real-time turn-by-turn feedback through lights and haptics.",
+      "Designed it to reduce rider reliance on phone screens while biking."
     ],
     links: [
-      { label: "LinkedIn", url: "https://www.linkedin.com/in/jeremy-c-upenn28" }
+      { label: "Demo Notes", url: "https://github.com/your-username/haptic-bike-navigation" }
     ],
     images: [
       {
-        src: "assets/projects/rwth-aachen-1.jpg",
-        alt: "Robotics research setup in Aachen",
-        caption: "Actuator system prototype"
+        src: "assets/projects/bike-nav-1.jpg",
+        alt: "Bike navigation hardware",
+        caption: "Handlebar haptics + LED display setup"
       },
       {
-        src: "assets/projects/rwth-aachen-2.jpg",
-        alt: "Carbon fiber layup automation test",
-        caption: "Automated layup demonstration"
+        src: "assets/projects/bike-nav-2.jpg",
+        alt: "Navigation feedback in testing",
+        caption: "Turn guidance testing session"
       }
     ]
   },
   "portfolio-site": {
-    title: "Johns Hopkins APL ASPIRE Robotics",
+    title: "Music Synthesizer",
     summary:
-      "Robotics intern experience with autonomous systems, simulation, and applied computer vision.",
+      "Custom PCB synth project from circuit design all the way to assembled and tested hardware.",
     points: [
-      "Designed a SolidWorks assembly for a Clearpath Jackal-based autonomous grasping system.",
-      "Developed an image detection model in Roboflow for Coke can detection with 90% accuracy.",
-      "Worked with ROS and Unity for autonomous navigation simulation and presented at IEEE ISEC and expos."
+      "Created detailed schematics and optimized board layout in Altium.",
+      "Assembled the board via reflow soldering.",
+      "Ran lead continuity and reliability checks to validate final hardware."
     ],
     links: [
-      { label: "LinkedIn", url: "https://www.linkedin.com/in/jeremy-c-upenn28" }
+      { label: "Build Log", url: "https://github.com/your-username/music-synthesizer" }
     ],
     images: [
       {
-        src: "assets/projects/jhu-apl-1.jpg",
-        alt: "Autonomous robotics platform",
-        caption: "Clearpath Jackal system design"
+        src: "assets/projects/music-synth-1.jpg",
+        alt: "Music synthesizer PCB board",
+        caption: "Custom synthesizer PCB"
       },
       {
-        src: "assets/projects/jhu-apl-2.jpg",
-        alt: "Simulation and computer vision workflow",
-        caption: "ROS, Unity, and computer vision workflow"
+        src: "assets/projects/music-synth-2.jpg",
+        alt: "Assembled synthesizer hardware",
+        caption: "Assembled board after reflow + testing"
       }
     ]
   }
