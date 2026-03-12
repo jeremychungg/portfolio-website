@@ -20,17 +20,18 @@ const projectSections = [
         cardSummary:
           "Built an embedded ML tennis serve coach that classifies serves in real time and gives instant feedback.",
         summary:
-          "I built an embedded ML device that acts like a real-time tennis serve coach.",
+          "I built an Edge AI device that acts like a real-time tennis serve coach.",
         actionText: "Open details, media, and links",
-        tags: ["ESP32-S3", "TensorFlow", "IMU", "BLE", "Haptics"],
+        tags: ["Seeed Xiao ESP32-S3", "TensorFlow", "ML", "IMU", "BLE", "GUIs", "Haptics"],
         points: [
-          "Used ESP32-S3 + TensorFlow to classify serves in real time with 98.25% accuracy.",
-          "Integrated a 6-axis IMU, BLE communication, and haptic feedback in one device.",
+          "Used Seeed Xiao ESP32 + TensorFlow to classify serves in real time with 98% accuracy.",
+          "Created HTML GUI to visualize serve data and classification results",
+          "Integrated a 6-axis IMU, BLE communication, and haptic feedback in one device with custom CAD mount onto the racket",
           "Designed it to give immediate guidance right after each serve."
         ],
         links: [
-          { label: "GitHub", url: "https://github.com/your-username/servesense" },
-          { label: "Project PDF", url: "assets/projects/servesense.pdf" }
+          { label: "GitHub", url: "https://github.com/jeremychungg/serve_sense"},
+          { label: "Project PDF", url: "assets/projects/ServeSense.pdf" }
         ],
         media: [
           {
@@ -41,7 +42,7 @@ const projectSections = [
           },
           {
             type: "image",
-            src: "assets/projects/servesense-2.jpg",
+            src: "assets/projects/servesense-2.png",
             alt: "ServeSense testing workflow",
             caption: "Real-time serve classification testing"
           },
@@ -141,21 +142,21 @@ const projectSections = [
         id: "pixhawk-compatible-flight-controller",
         title: "Custom Pixhack Compatible Flight Controller",
         cardSummary:
-          "Designed a custom Pixhawk-compatible flight controller and documented the PCB rendering.",
+          "Designed a custom Pixhawk-compatible flight controller for PennAiR's advanced class team.",
         summary:
           "Custom flight controller project designed to be Pixhawk compatible, with a focus on PCB architecture and integration requirements.",
         actionText: "Open details and PCB rendering",
         tags: ["PCB Design", "Flight Controller", "Avionics", "Hardware"],
         points: [
           "Designed a custom flight controller with Pixhawk compatibility targets.",
-          "Focused on board-level architecture, component selection, and integration constraints.",
-          "Prepared PCB rendering assets for documentation and review."
+          "Focused on power architecture and component selection.",
+          "Currently unfinished but preparing for review and release."
         ],
         links: [],
         media: [
           {
             type: "image",
-            src: "assets/projects/pixhawk-flight-controller-render.png",
+            src: "assets/projects/pixhawk-flight-controller-render.jpg",
             alt: "Custom Pixhawk compatible flight controller PCB rendering",
             caption: "PCB rendering"
           }
@@ -190,7 +191,7 @@ const projectSections = [
             type: "image",
             src: "assets/projects/music-synth-2.jpg",
             alt: "Assembled synthesizer hardware",
-            caption: "Assembled board after reflow and testing"
+            caption: "Assembled synthesizer device"
           }
         ]
       },
@@ -258,26 +259,25 @@ const projectSections = [
         summary:
           "Electric bike conversion project documented with a project link, build photo, and demo video.",
         actionText: "Open details, photo, video, and link",
-        tags: ["E-Bike", "Power Electronics", "Mechanical Integration", "Testing"],
+        tags: ["Arduino", "Power Electronics", "Motors", "Accelerometer", "SolidWorks", "LCD Screens", "Testing"],
         points: [
-          "Converted a standard bike into an e-bike system with integrated electrical hardware.",
-          "Documented the build with both static media and a video demo.",
-          "Packaged the project with an external link for fuller project context."
+          "Converted a standard bike into an e-bike system with DC motor running once speed is detected.",
+          "Used SolidWorks to design the enclosure and mounts, which were laser cutted.",
         ],
         links: [
-          { label: "Project Link", url: "https://github.com/your-username/e-bike-converter" }
+          { label: "Project Link", url: "https://devpost.com/software/big-baller-bikes" }
         ],
         media: [
           {
             type: "image",
             src: "assets/projects/e-bike-converter-1.jpg",
             alt: "Converted e-bike photo",
-            caption: "E-bike converter build photo"
+            caption: "Full completed setup"
           },
           {
             type: "video",
             src: "assets/projects/e-bike-converter-demo.mp4",
-            caption: "E-bike converter demo video"
+            caption: "Demo video"
           }
         ]
       }
@@ -294,19 +294,30 @@ const projectSections = [
         summary:
           "A playful PCB project built around a puzzle-piece shape and animated Neopixel integration.",
         actionText: "Open details, media, and links",
-        tags: ["PCB Design", "Neopixel", "Embedded", "Hardware"],
+        tags: ["Altium", "PCB Reflow", "Neopixel", "SolidWorks", "Lead Testing"],
         points: [
-          "Designed a novelty PCB around a puzzle-piece form factor.",
-          "Integrated Neopixel lighting into the board design.",
-          "Treated the project as a compact hardware experiment and visual build."
+          "Designed a PCB and laser cut puzzle piece that comes together with other pieces.",
+          "Created schematic and 2-layer board layout in Altium, then assembled the board via reflow soldering.",
         ],
         links: [],
         media: [
           {
             type: "image",
             src: "assets/projects/pcb-puzzle-piece-neopixel-1.jpg",
-            alt: "PCB puzzle piece with Neopixel",
-            caption: "PCB puzzle piece with Neopixel lighting"
+            alt: "PCB Layout on Altium",
+            caption: "Front side of PCB puzzle piece"
+          },
+          {
+            type: "image",
+            src: "assets/projects/pcb-puzzle-piece-neopixel-2.jpg",
+            alt: "PCB Layout on Altium",
+            caption: "Back side of PCB puzzle piece"
+          },
+          {
+            type: "image",
+            src: "assets/projects/pcb-puzzle-piece-neopixel-3.jpg",
+            alt: "Fully assembled PCB puzzle piece",
+            caption: "Fully assembled PCB puzzle piece"
           }
         ]
       },
@@ -314,15 +325,14 @@ const projectSections = [
         id: "minecraft-diamond-helmet",
         title: "Minecraft Diamond Helmet",
         cardSummary:
-          "Fun build inspired by the Minecraft diamond helmet, translated into a physical project.",
+          "Made it for the Minecraft movie and brought it to the theater",
         summary:
-          "A playful Minecraft diamond helmet build focused on fabrication and visual execution.",
+          "Diamond helmet for the Minecraft movie (netherite helmet was too much work)",
         actionText: "Open details and media",
-        tags: ["Fabrication", "CAD", "Build", "Fun Project"],
+        tags: ["SolidWorks", "Laser Cutting", "Build"],
         points: [
-          "Built a physical version of the Minecraft diamond helmet concept.",
-          "Focused on shape, finish, and recognizability of the design.",
-          "Used the project as a fun fabrication exercise outside core engineering work."
+          "Laser cut using 1/4 inch acrylic, used screws and t-slots to assemble all the parts, and then glued the stencils to the acrylic sides.",
+          "It was so cool even the security guard took a selfie with it."
         ],
         links: [],
         media: [
@@ -478,7 +488,7 @@ if (modalNode) {
     if (!project) return;
 
     titleNode.textContent = project.title;
-    summaryNode.textContent = project.summary;
+    summaryNode.textContent = project.cardSummary;
 
     linksNode.innerHTML = "";
     (project.links || []).forEach((link) => {
