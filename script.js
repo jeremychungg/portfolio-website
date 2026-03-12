@@ -98,9 +98,10 @@ const projectSections = [
         actionText: "Open details, media, and links",
         tags: ["Embedded Systems", "Control", "Electronics", "Integration"],
         points: [
-          "Built the control stack for a multi-actuator platform with synchronized outputs.",
-          "Integrated electronics, power distribution, and device-level control into one system.",
-          "Used iterative bench testing to validate behavior and tune reliability."
+          "Built an 8-actuator radial tensioning system for robotic carbon-fiber layup, using synchronized Arduino Mega control to reduce wrinkling during manufacturing.",
+          "Designed the 24V power distribution system with fused terminals, thermal protection, current sensing, and an emergency stop for safer operation under load.",
+          "Improved operator workflow by about 40% with a serial interface that supported both selective and simultaneous actuator control.",
+          "Connected the octopus controller to a Franka Emika arm through ROS to support future autonomous operation."
         ],
         links: [],
         media: [
@@ -344,7 +345,7 @@ const projectSections = [
           },
           {
             type: "image",
-            src: "assets/projects/diamond-helmet-2.jpg",
+            src: "assets/projects/minecraft-helmet-2.jpg",
             alt: "SolidWorks Assembly",
             caption: "SolidWorks Assembly"
           }
