@@ -271,7 +271,7 @@ const projectSections = [
         media: [
           {
             type: "image",
-            src: "assets/projects/e-bike-converter-1.jpg",
+            src: "assets/projects/e-bike-converter-1.JPG",
             alt: "Converted e-bike photo",
             caption: "Full completed setup"
           },
