@@ -341,6 +341,12 @@ const projectSections = [
             src: "assets/projects/minecraft-diamond-helmet-1.jpg",
             alt: "Minecraft diamond helmet build",
             caption: "Minecraft diamond helmet"
+          },
+          {
+            type: "image",
+            src: "assets/projects/diamond-helmet-2.jpg",
+            alt: "SolidWorks Assembly",
+            caption: "SolidWorks Assembly"
           }
         ]
       }
