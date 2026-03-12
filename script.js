@@ -36,7 +36,7 @@ const projectSections = [
         media: [
           {
             type: "image",
-            src: "assets/projects/servesense-1.jpg",
+            src: "assets/projects/servesense-1.JPG",
             alt: "ServeSense prototype hardware",
             caption: "ServeSense hardware prototype"
           },
@@ -277,7 +277,7 @@ const projectSections = [
           },
           {
             type: "video",
-            src: "assets/projects/e-bike-converter-demo.mp4",
+            src: "assets/projects/e-bike-converter-demo.MP4",
             caption: "Demo video"
           }
         ]
@@ -310,13 +310,13 @@ const projectSections = [
           },
           {
             type: "image",
-            src: "assets/projects/pcb-puzzle-piece-neopixel-2.jpg",
+            src: "assets/projects/pcb-puzzle-piece-neopixel-2.png",
             alt: "PCB Layout on Altium",
             caption: "Back side of PCB puzzle piece"
           },
           {
             type: "image",
-            src: "assets/projects/pcb-puzzle-piece-neopixel-3.jpg",
+            src: "assets/projects/pcb-puzzle-piece-3.JPG",
             alt: "Fully assembled PCB puzzle piece",
             caption: "Fully assembled PCB puzzle piece"
           }
