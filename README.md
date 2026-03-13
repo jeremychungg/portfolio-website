@@ -1,42 +1,42 @@
-# Portfolio Site
+# Jeremy Chung Portfolio Website
 
-A simple multi-page portfolio for engineering students:
+This is my personal portfolio website. I built it to showcase the projects, engineering work, and technical interests I care about most, especially across robotics, embedded systems, electronics, and aerospace-related builds.
 
-- `index.html`: introduction page
-- `projects.html`: project list with skill bubbles
-- `contact.html`: contact email + form forwarding (Formspree)
+The site brings together my background as an Electrical Engineering student at the University of Pennsylvania and highlights the kind of work I enjoy doing: building hardware-software systems, prototyping embedded devices, designing PCBs, and working on robotics projects that interact with the physical world.
 
-## Quick customization
+## What is on the site
 
-1. Replace `Your Name` text in all pages.
-2. Replace `your.email@example.com` in `contact.html`.
-3. Update project titles/descriptions/skills in `projects.html`.
-4. In `contact.html`, change:
+- `index.html`: the main landing page with my intro, background, featured project sections, and contact form
+- `script.js`: project data and interactive behavior for the portfolio cards and modal views
+- `styles.css`: all styling for the site
+- `projects.html`: redirects to the projects section on the homepage
+- `contact.html`: redirects to the contact section on the homepage
+- `assets/`: images, PDFs, videos, and other project media
 
-```html
-action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID"
-```
+## Featured projects
 
-to your real Formspree endpoint.
+Some of the projects currently included on the site:
 
-## Connect contact form to your email
+- ServeSense
+- LeRobot Hackathon
+- Octopus Controller
+- Automated Thrust Stand
+- Custom Pixhack Compatible Flight Controller
+- Music Synthesizer
+- Haptic Bike Navigation System
+- Rescue: AI Smart Glasses
+- E-Bike Converter
 
-1. Create a free form at [Formspree](https://formspree.io/).
-2. Copy your form endpoint (looks like `https://formspree.io/f/xxxxabcd`).
-3. Paste it into `contact.html` as the form `action`.
-4. Submit a test message and confirm your email.
+There is also a smaller fun-projects section with builds like my PCB Puzzle Piece with Neopixel and Minecraft Diamond Helmet.
 
-## Deploy on GitHub Pages
+## Why I made it
 
-1. Create a GitHub repo (for example `portfolio-site`).
-2. Push this folder's contents to the repo root.
-3. In GitHub: `Settings` -> `Pages`.
-4. Under `Build and deployment`, choose:
-   - `Source`: `Deploy from a branch`
-   - `Branch`: `main` and folder `/ (root)`
-5. Save. Your site will be live at:
-   - `https://<your-username>.github.io/<repo-name>/`
+I wanted one place that feels like me and gives a clear view of what I have worked on. Instead of just listing projects, this site lets me show photos, videos, PDFs, and links so each build has more context.
 
-## Local preview
+## Running it locally
 
-Open `index.html` directly in a browser, or run a local static server if you prefer.
+This is a static site, so I can open `index.html` directly in a browser to preview it locally.
+
+## Contact
+
+The contact section includes my email, LinkedIn, and a Formspree-powered message form so people can reach out for collaboration, project discussions, or opportunities.
