@@ -54,17 +54,17 @@ const projectSections = [
         ]
       },
       {
-        id: "lerobot-hackathon",
-        title: "LeRobot Hackathon",
+        id: "imitation-learning-robot-system",
+        title: "Imitation Learning Robot System",
         cardSummary:
-          "Hackathon project where I trained SmolVLM to help a follower robot detect and grab colored blocks.",
+          "LeRobot Worldwide Hackathon project where I trained SmolVLM to help a SO-101 follower robotic arm detect and grab colored blocks.",
         summary:
           "LeRobot Worldwide Hackathon project focused on imitation learning for robotic block picking.",
         actionText: "Open details, media, and links",
-        tags: ["PyTorch", "NVIDIA CUDA", "SmolVLM", "Imitation Learning", "Robotics"],
+        tags: ["PyTorch", "NVIDIA CUDA", "SmolVLM", "Imitation Learning", "Robotics", "Hugging Face"],
         points: [
           "Trained open-source SmolVLM using PyTorch and NVIDIA CUDA Toolkit.",
-          "Built a leader-follower setup where the follower learned to detect and grasp colored blocks.",
+          "Built a leader-follower setup where the follower learned to detect and grasp colored blocks using a camera.",
           "Shipped a working autonomous grasping demo during hackathon constraints."
         ],
         links: [
@@ -92,24 +92,36 @@ const projectSections = [
         id: "octopus-controller",
         title: "Octopus Controller",
         cardSummary:
-          "Embedded control project for driving and coordinating a multi-actuator octopus-inspired system.",
+          "Embedded control project for driving and coordinating 8 actuators to level and apply tension to prepreg carbon fiber sheets",
         summary:
           "Controller build for an octopus-style system focused on robust actuation, wiring, and system integration.",
         actionText: "Open details, media, and links",
-        tags: ["Embedded Systems", "Control", "Electronics", "Integration"],
+        tags: ["Embedded Systems", "Arduino", "ROS", "Stepper Motors", "Control", "Integration"],
         points: [
           "Built an 8-actuator radial tensioning system for robotic carbon-fiber layup, using synchronized Arduino Mega control to reduce wrinkling during manufacturing.",
           "Designed the 24V power distribution system with fused terminals, thermal protection, current sensing, and an emergency stop for safer operation under load.",
           "Improved operator workflow by about 40% with a serial interface that supported both selective and simultaneous actuator control.",
           "Connected the octopus controller to a Franka Emika arm through ROS to support future autonomous operation."
         ],
-        links: [],
+        links: [{ label: "Research Paper", url: "assets/projects/octoput-controller-report.pdf" }],
         media: [
           {
             type: "image",
-            src: "assets/projects/octopus-controller-1.jpg",
-            alt: "Octopus controller hardware",
-            caption: "Octopus controller hardware setup"
+            src: "assets/projects/octopus-controller-1.JPG",
+            alt: "Octopus controller full setup",
+            caption: "Octopus controller full hardware setup with robot arm"
+          },
+          {
+            type: "image",
+            src: "assets/projects/octopus-controller-2.jpg",
+            alt: "Octopus controller electrical box wiring",
+            caption: "Octopus controller electrical box wiring with power supply, fuses, , Arduino Mega, and motor drivers"
+          },
+          {
+            type: "image",
+            src: "assets/projects/octopus-controller-3.JPG",
+            alt: "Arm and actuators in action",
+            caption: "Universal Robot arm and actuators in action"
           }
         ]
       },
@@ -339,9 +351,9 @@ const projectSections = [
         media: [
           {
             type: "image",
-            src: "assets/projects/minecraft-diamond-helmet-1.jpg",
+            src: "assets/projects/minecraft-helmet-1.jpg",
             alt: "Minecraft diamond helmet build",
-            caption: "Minecraft diamond helmet"
+            caption: "Me wearing the helmet (full protection)"
           },
           {
             type: "image",
