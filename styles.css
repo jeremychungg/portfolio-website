@@ -249,17 +249,21 @@ p {
   width: 100%;
   aspect-ratio: 16 / 10;
   margin-bottom: 0.9rem;
-  border: 1px solid #b6caf0;
-  border-radius: 12px;
-  overflow: hidden;
+  display: grid;
+  place-items: center;
+  padding: 0.35rem;
   background: #e6efff;
 }
 
 .project-card-media img {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
+  border: 1px solid #b6caf0;
+  border-radius: 12px;
   background: #e6efff;
 }
 
@@ -439,38 +443,47 @@ textarea:focus {
 }
 
 .project-modal-images {
-  display: grid;
-  gap: 0.75rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-count: 2;
+  column-gap: 0.75rem;
 }
 
 .modal-shot {
-  margin: 0;
+  margin: 0 0 0.75rem;
+  break-inside: avoid;
+  display: inline-block;
+  width: 100%;
 }
 
 .modal-shot img,
 .modal-shot video,
 .modal-shot iframe,
 .modal-shot .modal-placeholder {
-  width: 100%;
-  aspect-ratio: 16 / 10;
   border: 1px solid #b6caf0;
   border-radius: 12px;
 }
 
 .modal-shot img {
   display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: min(70vh, 520px);
   object-fit: contain;
   background: #e6efff;
+  margin: 0 auto;
 }
 
 .modal-shot video,
 .modal-shot iframe {
   display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
   background: #dbe7ff;
 }
 
 .modal-shot .modal-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 10;
   display: grid;
   place-items: center;
   background: repeating-linear-gradient(
@@ -544,6 +557,6 @@ footer p {
   }
 
   .project-modal-images {
-    grid-template-columns: 1fr;
+    column-count: 1;
   }
 }

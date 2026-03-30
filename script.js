@@ -69,24 +69,42 @@ const projectSections = [
         ],
         links: [
           {
-            label: "Project Overview",
-            url: "https://github.com/your-username/imitation-learning-robot-system"
+            label: "Project Dataset",
+            url: "https://huggingface.co/datasets/LeRobot-worldwide-hackathon/308-so100_smolVLA-cube_pickup"
           }
         ],
         media: [
           {
             type: "image",
             src: "assets/projects/imitation-robot-1.jpg",
-            alt: "Leader follower robot setup",
-            caption: "Leader-follower robot system"
+            alt: "SO-100 robot setup",
+            caption: "SO-100 robot system"
           },
           {
-            type: "image",
-            src: "assets/projects/imitation-robot-2.jpg",
-            alt: "Robot grasping colored blocks",
-            caption: "Autonomous block detection and grasping"
+            type: "video",
+            src: "assets/projects/imitation-robot-2.mov",
+            alt: "SO-100 robot grasping colored blocks",
+            caption: "Autonomous block detection and grasping demo"
           }
         ]
+      },
+      {
+        id: "pololu-romi-maze-robot",
+        title: "Pololu Romi Maze Robot",
+        cardSummary:
+          "Autonomous maze robot that used RRT, dead reckoning, AprilTag localization, and a Kalman filter to repeatedly plan, navigate, and relocalize.",
+        summary:
+          "Built a Pololu Romi robot that autonomously traversed a maze by planning with RRT, navigating through dead reckoning, localizing off an AprilTag, and refining its pose estimate with a Kalman filter before repeating the process.",
+        actionText: "Open details and workflow",
+        tags: ["Robotics", "RRT", "Dead Reckoning", "April Tag", "Kalman Filter", "Autonomous Navigation"],
+        points: [
+          "Built an autonomous maze-navigation pipeline on a Pololu Romi robot using Rapidly-exploring Random Trees to generate feasible paths through the environment.",
+          "Used dead reckoning during traversal to estimate the robot pose between visual localization updates.",
+          "Detected an AprilTag target to correct the robot state and guide it toward the goal location.",
+          "Applied a Kalman filter to fuse motion and measurement data, improve location estimates, and repeat the plan-navigate-localize cycle."
+        ],
+        links: [],
+        media: []
       },
       {
         id: "octopus-controller",
@@ -140,7 +158,7 @@ const projectSections = [
           "Reduced testing time by 62 percent through automated acquisition and workflow improvements."
         ],
         links: [
-          { label: "GitHub", url: "https://github.com/your-username/automated-thrust-stand" }
+          { label: "GitHub", url: "https://github.com/pennaerial/PennAirThrustStand" }
         ],
         media: [
           {
@@ -223,7 +241,7 @@ const projectSections = [
           "Designed it to reduce rider reliance on phone screens while biking."
         ],
         links: [
-          { label: "Demo Notes", url: "https://github.com/your-username/haptic-bike-navigation" }
+          { label: "Presentation", url: "https://github.com/your-username/haptic-bike-navigation" }
         ],
         media: [
           {
@@ -242,23 +260,26 @@ const projectSections = [
       },
       {
         id: "rescue-smart-glasses",
-        title: "Rescue: AI Smart Glasses",
+        title: "Rescue: CPR Smart Glasses",
         cardSummary:
           "AI smart glasses to guide users through CPR, with on-device model deployment support.",
         summary:
           "Rescue is an AI smart glasses project to help guide users through CPR. I helped train and quantize the model onto the glasses using more than 1000 preprocessed training images.",
         actionText: "Open details, media, and links",
-        tags: ["AI", "Computer Vision", "Model Quantization", "Wearables"],
+        tags: ["TensorFlow", "Model Quantization", "Wearables", "FastAPI"],
         points: [
           "Helped train the CPR guidance model using more than 1000 preprocessed training images.",
           "Quantized and deployed the model onto the smart glasses hardware.",
           "Supported an assistive workflow focused on clear CPR guidance for users."
         ],
-        links: [],
+        links: [
+          {label: "Project Overview", url: "https://devpost.com/software/rescue-5hq4sb" },
+          {label: "GitHub", url: "https://github.com/Movenanter/Rescue" }
+        ],
         media: [
           {
             type: "image",
-            src: "assets/projects/rescue-smart-glasses-1.jpg",
+            src: "assets/projects/rescue-smart-glasses-1.JPG",
             alt: "Rescue AI smart glasses",
             caption: "Rescue smart glasses setup"
           }
@@ -403,12 +424,12 @@ const buildProjectCard = (project) => {
     img.loading = "lazy";
     img.addEventListener("error", () => {
       mediaPreview.classList.add("is-placeholder");
-      mediaPreview.textContent = "Add project preview";
+      mediaPreview.textContent = "Image coming soon!";
     });
     mediaPreview.appendChild(img);
   } else {
     mediaPreview.classList.add("is-placeholder");
-    mediaPreview.textContent = "Add project preview";
+    mediaPreview.textContent = "Image coming soon!";
   }
 
   const title = document.createElement("h2");
